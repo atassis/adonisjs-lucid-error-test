@@ -56,7 +56,7 @@ export default class Estimate extends BaseModel {
   declare projectId: string;
 
   @belongsTo(() => Project, { foreignKey: 'projectId' })
-  declare project: BelongsTo<typeof Project>;
+  declare projectProject: BelongsTo<typeof Project>;
 
   @hasMany(() => Item, { foreignKey: 'estimateId' })
   declare items: HasMany<typeof Item>;

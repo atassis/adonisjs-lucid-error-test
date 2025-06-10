@@ -99,7 +99,7 @@ export default class ProjectService {
         { client: trx },
       );
 
-      await estimate.related('project').associate(project);
+      await estimate.related('projectProject').associate(project);
       await estimate.related('client').associate(client);
       await estimate.related('generalContractor').associate(generalContractor);
 
